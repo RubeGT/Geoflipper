@@ -14,6 +14,6 @@ JavaScript
 Google Maps JavaScript API
 Google Street View Services
 HTML/CSS
-Disclaimer
+### Disclaimer
 
 Geoflipper is an independent project and is not affiliated with or endorsed by Google or GeoGuessr.
