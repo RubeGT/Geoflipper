@@ -1,0 +1,64 @@
+body, html {
+    margin: 0; padding: 0; height: 100%; overflow: hidden;
+    font-family: sans-serif;
+}
+
+#game-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* The Secret Sauce: Scale and Offset */
+.map-wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Clips the scaled content */
+}
+
+#street-view {
+    width: 100%;
+    height: 100%;
+    /* Scale up slightly and move up/left to hide labels */
+    transform: scale(1.1); 
+    transform-origin: top left;
+    margin-top: -30px; 
+}
+
+#guess-map {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    height: 200px;
+    border: 4px solid white;
+    border-radius: 8px;
+    z-index: 10;
+    transition: width 0.3s, height 0.3s;
+}
+
+#guess-map:hover {
+    width: 500px;
+    height: 350px;
+}
+
+#guess-btn {
+    position: absolute;
+    bottom: 230px;
+    right: 20px;
+    z-index: 11;
+    padding: 10px 20px;
+    background: #2ecc71;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#ui-overlay {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
